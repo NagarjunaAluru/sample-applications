@@ -4,17 +4,28 @@
 <html>
 <head>
 <style type="text/css">
-body {
+/* body {
   margin: 200px 0px 0px 500px;
-}
+} */
+body {
+    width: 90%;
+    height: 85%;
+    padding: 20px;
+    border: 10px ridge black;
+    text-align: center;
+  }
 </style>
 	<title>Spring MVC</title>
 </head>
 
 <body>
+	<div style="text-align: right; color :blue">
+			Welcome: ${firstname} &nbsp;&nbsp; 
+			<a href="${pageContext.servletContext.contextPath}" >Logout</a>
+		</div>
 	<h2>All Employees in System</h2>
 
-	<table border="1">
+	<table border="1" align="center">
 		<tr>
 			<th>Employee Id</th>
 			<th>First Name</th>
