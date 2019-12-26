@@ -9,41 +9,19 @@ import java.util.Scanner;
  * @author naluru
  *
  */
-//Output:
-//    *
-//   * *
-//  *   *
-// *     *
-//*       *
+/*Output:
+    *
+   * *
+  *   *
+ *     *
+*       **/
 public class DisplayStarts {
-	private String input;
-	
-	public String getInput() {
-		return input;
-	}
-
-	public void setInput(String input) {
-		this.input = input;
-	}
-
-	private DisplayStarts() {
-	
-	}
-	
-	public DisplayStarts(String s) {
-		this.input = s;
-	}
 
 	/**
 	 * @param args
 	 */
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		DisplayStarts ds = new DisplayStarts();
-		System.out.println(ds.toString());
-		System.out.println(ds.hashCode());
-		System.out.println(Integer.toHexString(ds.hashCode()));
-		System.exit(0);
 
 		Scanner input = new Scanner(System.in);
 		int inputVal = input.nextInt();
