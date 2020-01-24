@@ -1,6 +1,10 @@
 package com.galaxe.practice.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -13,9 +17,18 @@ public class ArrayTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		String s = "E2EAutomation/E2E/Test-Suit/Test.json";
+		
+		String arr =  s.split("/")[0];
+//		System.out.println(Arrays.toString(arr));
+		
+		String content = s.substring(arr.length()+1, s.length());
+		System.out.println(content);
+		
 		//arrayRotation();
 		//arraySwaping();
-		multiDimentionalArraySwaping();
+		//multiDimentionalArraySwaping();
 	}
 
 	private static void arrayRotation() {
@@ -64,6 +77,7 @@ public class ArrayTest {
 		}
 		System.out.println("=========");
 		for (String[] ar : arr)
+			
 			System.out.println(Arrays.toString(ar));
 
 	}

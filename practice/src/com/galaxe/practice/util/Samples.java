@@ -9,11 +9,14 @@ package com.galaxe.practice.util;
  */
 public class Samples{
 
+	protected int num;
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		Samples sm = new Samples();
+		sm.methodOne();
+		System.exit(0);
 		int counter = 0;
 		
 		counter++;
@@ -58,6 +61,10 @@ public class Samples{
 		int val = Integer.valueOf(s2);
 		System.out.println(val);
 
+	}
+	
+	void methodOne(){
+		System.out.println(num);
 	}
 	
 	static void ifConditions() {

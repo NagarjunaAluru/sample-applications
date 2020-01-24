@@ -20,6 +20,7 @@ public class ListTest {
 		List<String> numsList = new ArrayList<String>();
 		numsList.add("One");
 		numsList.add("Two");
+		numsList.add("Two");
 		numsList.add("Three");
 		numsList.add("Four");
 		numsList.add("Five");
@@ -29,6 +30,7 @@ public class ListTest {
 		numsList.add("Nine");
 		numsList.add("Ten");
 		
+		numsList.remove("Two");
 		for(int i=1;i<=numsList.size();i++) {
 			System.out.println(numsList.get(i-1));
 			
