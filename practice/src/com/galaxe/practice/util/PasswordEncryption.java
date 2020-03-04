@@ -4,12 +4,15 @@
 package com.galaxe.practice.util;
 
 import java.security.spec.KeySpec;
+
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 
 import org.apache.commons.codec.binary.Base64;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Base64Data;
 
 /**
  * @author naluru
@@ -54,7 +57,7 @@ public class PasswordEncryption {
 		String decryptedText = null;
 		try {
 			cipher.init(Cipher.DECRYPT_MODE, key);
-			byte[] encryptedText = Base64.decodeBase64(encryptedString);
+			byte[] encryptedText = Base64Data.decodeBase64(encryptedString);
 			byte[] plainText = cipher.doFinal(encryptedText);
 			decryptedText = new String(plainText);
 		} catch (Exception e) {

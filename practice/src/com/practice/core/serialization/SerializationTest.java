@@ -1,6 +1,6 @@
 /**
  * 
- */
+ *//*
 package com.practice.core.serialization;
 
 import java.io.File;
@@ -13,17 +13,17 @@ import java.io.ObjectOutputStream;
 
 import com.galaxe.practice.util.Employee;
 
-/**
+*//**
  * @author naluru
  *
- */
+ *//*
 public class SerializationTest {
 
-	/**
+	*//**
 	 * @param args
 	 * @throws IOException 
 	 * @throws ClassNotFoundException 
-	 */
+	 *//*
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Employee emp = new Employee(100, "Nag", "SSE", 100000, 32);
 		String file = "D://Serialization.txt";
@@ -35,6 +35,7 @@ public class SerializationTest {
 			}
 		}
 		
+		Asser
 		try(FileInputStream fin = new FileInputStream(file)){
 			try(ObjectInputStream ois = new ObjectInputStream(fin)){
 				Employee emp2 = (Employee) ois.readObject();
@@ -44,3 +45,4 @@ public class SerializationTest {
 		}
 	}
 }
+*/

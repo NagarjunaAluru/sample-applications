@@ -3,11 +3,19 @@
  */
 package com.galaxe.practice.util;
 
+import java.io.Serializable;
+
 /**
  * @author naluru
  *
  */
-public class Employee {
+public class Employee implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1417L;
+	
 	
 	private int empId;
 	private String name;

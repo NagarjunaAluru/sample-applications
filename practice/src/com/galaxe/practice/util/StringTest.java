@@ -23,7 +23,8 @@ public class StringTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		exeTimeTest();
+		System.exit(0);
 		int meal=5;
 		//int tip=2;
 		//int total= meal+(meal>6?++tip:tip++);
@@ -136,6 +137,22 @@ public class StringTest {
 		      String[] tokens = test.split("\\s");
 		      System.out.println(tokens.length);
 		
+	}
+	
+	private static void exeTimeTest(){
+		long start = System.currentTimeMillis();
+		
+		long l = 10;
+		String s ="";
+		
+		for(int i=1;i<=l;i++)
+			s += Integer.toBinaryString(i);
+		
+		long l2 = Integer.parseInt(s, 2);
+		System.out.println(l2);
+		long end = System.currentTimeMillis();
+		System.out.println(end - start);
+
 	}
 
 }

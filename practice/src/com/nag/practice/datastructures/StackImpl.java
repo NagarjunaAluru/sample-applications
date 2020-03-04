@@ -31,4 +31,5 @@ public class StackImpl<E> {
 		System.out.println(s.lastElement());
 		System.out.println(s.lastIndexOf("Nag"));
 	}
+	
 }
